@@ -43,11 +43,25 @@ const danny = {
   // calcAge : function (birthYear){
   //   return 2027 - birthYear
   // }
+  // calcAge : function (){
+  //   console.log(this);
+  //   return 2027 - this.birthYear
+  // }
   calcAge : function (){
-    console.log(this);
-    return 2027 - this.birthYear
+    this.age = 2037 - this.birthYear
+    return this.age;
+  },
+
+  getSummary: function(){
+    return `${this.firstName} is a ${this.calcAge()}-year old teacher, and ${this.hasDriversLicense?'he has a drivers licenses':'he has no drivers licenses'}`
   }
 }
 
 console.log(danny.calcAge())
-// console.log(danny['calcAge'](1998))
+console.log(danny);
+// console.log(danny.age)
+// console.log(danny.age)
+// console.log(danny.age)
+
+// Challenge
+console.log(danny.getSummary());
