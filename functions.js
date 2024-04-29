@@ -11,13 +11,16 @@ greetMorning('Michael')
 greetMorning('Peter')
 */
 
-function morning(){
-  return 'Good Morning'
+function morning(name){
+
+  return `Good Morning ${name}`;
 }
 
-function greet(name,cb){
+function greet(nam,cb){
   const myName = 'Daniel';
-  console.log(`${cb} ${name}, my name is ${myName}`);
+  console.log(`${cb(nam)} , my name is ${myName}`);
+  
 }
-greet('Mike');
+ 
+greet('Joe', morning);
 

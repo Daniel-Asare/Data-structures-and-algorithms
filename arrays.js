@@ -77,14 +77,75 @@ console.log(newArray);
 // forEach
 
 const people = [
-  {name:'bob', age:20, position:'developer'},
-  {name:'peter', age: 25, position: 'designer'},
-  {name:'susy',age:30, position: 'the boss'}
+  {name:'bob', age:20, position:'developer',id:1,salary: 200},
+  {name:'peter', age: 25, position: 'designer',id:2,salary: 300},
+  {name:'susy',age:30, position: 'the boss',id:3,salary: 500},
+  {name:'anna',age:35, position: 'the boss',id:4,salary: 500}
 ]
 
-people.forEach(function(person){
-  console.log(person);
-})
+// function showPerson (person){
+//   console.log(person.name.toUpperCase());
+// }
+
+// people.forEach(showPerson);
+
+// people.forEach(function(person){
+//   console.log(person.position.toUpperCase());
+// })
+
+// Map
+
+// const ages = people.map((person)=>{
+//   return person.age + 20;
+// })
+
+// const newPeople = people.map(function(person){
+//   return {firstName:person.name.toUpperCase(), oldAge:person.age + 20}
+
+// })
+
+// const names = people.map(function(person){
+//   return `<h1>${person.name} hanson</h1>`;
+// })
+
+// document.body.innerHTML = names.join('')
+// console.log(names);
+// console.log(ages);
+// console.log(newPeople);
+
+
+// filter
+// const youngPeople = people.filter(function(person){
+//   return (person.age >= 25);
+// })
+
+// console.log(youngPeople);
+
+// // find
+// const names = ['bob','peter','suzy']
+// console.log(names.find(function(name){
+//   return name === 'bob'
+// }));
+
+
+// const person = people.find(function(person){
+//   return person.id === 3 ;
+// })  
+// const person2 = people.find(function(person){
+//   return person.id > 2;
+// })  
+// console.log(person);
+
+// Reduce 
+const total = people.reduce(function(acc,curr){
+  acc+=curr.salary;
+  return acc 
+},0)
+console.log(total );
+
+// Challenge
+
+
 
 
 
