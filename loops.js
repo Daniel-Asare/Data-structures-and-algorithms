@@ -68,3 +68,9 @@ console.log(ages);
     }
   }
 
+  let rep = 1;
+  while(rep <= 10){
+    `Lifting weight repetition ${rep}`
+    rep++;
+  }
+
