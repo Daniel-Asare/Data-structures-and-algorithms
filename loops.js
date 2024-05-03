@@ -28,7 +28,6 @@ for(let i = 0; i < danny.length; i++){
 }
 
 console.log(typeArr);
-*/
 
 const years = [1991,2007,1960,2020]
 const ages = [];
@@ -54,7 +53,7 @@ console.log(ages);
 //   console.log( danny[i],typeof danny[i]);
 // }
 
-  const danny = ['danny','asare',2037-1991,'teacher',['Michael','Peter','Steven'],true];
+const danny = ['danny','asare',2037-1991,'teacher',['Michael','Peter','Steven'],true];
 
   for (let i = danny.length - 1; i >= 0 ;i--){
     console.log(danny[i]);
@@ -62,7 +61,7 @@ console.log(ages);
 
   for(let exercise = 1; exercise < 4; exercise++){
     console.log(`--------Starting exercise ${exercise}`);
-
+    
     for(let rep = 1; rep <= 6; rep++){
       console.log(`Exercise ${exercise}:Lifting weight repetition ${rep}`);
     }
@@ -75,11 +74,38 @@ console.log(ages);
   }
 
   let dice = Math.trunc(Math.random() * 6) + 1;
-  console.log(dice);
   while(dice === 6){
-    console.log(`you roll six`);
-    dice++;
+    console.log(`you roll a ${dice}`);
   }
-
+  
+  */
 
   
+const bills = [22,295,179,440,37,105,10,1100,86,52]
+const tips = [];
+const totals = [];
+
+function calcTip(bil){
+  for(let bill = 0; bill < bil.length; bill++){
+    const tip = 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+    tips.push(tip)
+    
+    const total = bil[bill] + tip;
+    totals.push(total);
+  }
+}
+
+calcTip(bills);
+console.log(tips);
+console.log(totals);
+
+function calcAverage(arr){
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
+
+  console.log(sum / arr.length);
+}
+
+calcAverage(totals)
