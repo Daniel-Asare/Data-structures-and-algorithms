@@ -146,7 +146,6 @@ console.log(total );
 // Challenge
 
 
-/*
 // Destruction
 const restaurant = {
   name: 'Classico Italiano',
@@ -169,11 +168,18 @@ const restaurant = {
       close: 24,
     },
   },
-
+  
   order:function(starterIndex,mainIndex){
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]; 
   }
 };
+
+
+
+
+
+
+/*
 
 const arr = [2,3,4];
 const a = [0];
@@ -214,12 +220,16 @@ console.log(p, q, r);
 
 */
 // Spread operator
-const arr = [7,7,8,9];
+const arr = [7,8,9];
 const badNewArr = [1,2,3,arr[0], arr[1],arr[2]];
 console.log(arr);
 
 const newArr = [1,2,3,4,...arr];
 console.log(newArr);
+console.log(...newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
 
 
 
