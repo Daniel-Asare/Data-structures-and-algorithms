@@ -109,6 +109,16 @@ restaurant.orderDelivery({
   address: 'Via del Solo, 21'
 })
 
+
+
+const arr = [1,2,...[3,5]];
+
+// Rest parameters
+const [a,b,...others] = [1,2,3,4,5];
+console.log(a,b,...others);
+
+const 
+
 /*
 const {name, categories, openingHours} = restaurant;console.log(name, openingHours, categories);
 
@@ -130,4 +140,16 @@ console.log(a,b);
 // Nested objects
 const {open:o,close:c} = hours;
 console.log(o,c);
+*/
+
+
+// Objects
+/*
+const newRestaurant = {founderIn:1998, ...restaurant, founder: 'Daniel Baah Asare'}
+console.log(newRestaurant);
+
+const restaurantCopy = {...restaurant}
+restaurantCopy.name = 'Ristorante Roma';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
 */

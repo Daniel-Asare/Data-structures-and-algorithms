@@ -171,6 +171,9 @@ const restaurant = {
   
   order:function(starterIndex,mainIndex){
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]; 
+  },
+  orderPasta: function(ing1,ing2,ing3){
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
   }
 };
 
@@ -231,8 +234,19 @@ console.log(...newArr);
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
 
+const manMenuCopy = [...restaurant.mainMenu];
 
+// Join 2 arrays
+const menu = [...restaurant.starterMenu,...restaurant.mainMenu]
+console.log(menu);
 
+// ITERABLES :  arrays, string, sets, NOT objects
 
+const str = 'daniel';
+const letters = [...str];
+console.log(letters);
 
+const ingredients = [ prompt(`Let's make pasta! ingredient 1`), prompt(`Let's make pasta! ingredient 2!`), prompt(`Let's make pasta! ingredient 1`)];
+
+restaurant.orderPasta(...ingredients)
 
