@@ -174,3 +174,5 @@ add(8,6,8,9,6,1,5)
 
 const x = [23,5,7]
 add(...x)
+
+console.log(undefined || 'Daniel');
