@@ -155,8 +155,12 @@ console.log(restaurantCopy.name);
 console.log(restaurant.name);
 */
 
-const add = function(){
-
+const add = function(...add){
+  let result = 0
+  for(let i = 0; i < add.length; i++){
+    result += add[i];
+  }
+  console.log(result);
 }
 add(5,3)
-add(4,2)
+add(4,2,3,5,6)
