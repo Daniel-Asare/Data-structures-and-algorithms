@@ -95,8 +95,14 @@ const restaurant = {
   },
   orderDelivery: function({starterIndex = 1,mainIndex = 0,time = '12:30',address = 'Ablekuma'}){
     console.log(`Order received ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address}  at ${time}`);
+  },
+  orderPizza: function(mainIngredient,...otherIngredient){
+    console.log(mainIngredient);
+    console.log(otherIngredient);
   }
 };
+
+restaurant.orderPizza('mushrooms','onions','olives','spinach')
 
 restaurant.orderDelivery({
   time:'23:30',
