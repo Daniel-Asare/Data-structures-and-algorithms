@@ -102,7 +102,7 @@ const restaurant = {
   }
 };
 
-restaurant.orderPizza('mushrooms','onions','olives','spinach')
+restaurant.orderPizza('mushrooms','onions','olives','spinach');
 
 restaurant.orderDelivery({
   time:'23:30',
