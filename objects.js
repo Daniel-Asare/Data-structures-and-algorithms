@@ -165,3 +165,6 @@ const add = function(...add){
 add(5,3)
 add(4,2,3,5,6)
 add(8,6,8,9,6,1,5)
+
+const x = [23,5,7]
+add(...x)
