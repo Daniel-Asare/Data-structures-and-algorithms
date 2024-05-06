@@ -117,7 +117,8 @@ const arr = [1,2,...[3,5]];
 const [a,b,...others] = [1,2,3,4,5];
 console.log(a,b,...others);
 
-const 
+ const [pizza,,Risotto,...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu]
+console.log(pizza,Risotto,otherFood);
 
 /*
 const {name, categories, openingHours} = restaurant;console.log(name, openingHours, categories);
@@ -153,3 +154,9 @@ restaurantCopy.name = 'Ristorante Roma';
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
 */
+
+const add = function(){
+
+}
+add(5,3)
+add(4,2)
