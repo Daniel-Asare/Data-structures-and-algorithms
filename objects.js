@@ -175,4 +175,8 @@ add(8,6,8,9,6,1,5)
 const x = [23,5,7]
 add(...x)
 
-console.log(undefined || 'Daniel');
+console.log(3 || 'Daniel');
+console.log('' || 'Daniel');
+console.log(true || 0);
+console.log(undefined || null);
+console.log(undefined || 0 || '' || 'Hello' || 23 || null);
