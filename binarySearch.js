@@ -1,20 +1,21 @@
 // Given a sorted array of 'n' elements and a target element 't', find the index of 't' in the array. Return - 1 if the target element is not found
 function binarySearch(arr,target){
-  let start = 0;
-  let end = arr.length - 1
+  let startIndex = 0;
+  let endIndex = arr.length - 1;
 
-  while(start <= end){
-    let middle = Math.floor((start + end)/2);
-    if(target === arr[middle]){
-      return middle
+  while(startIndex <= endIndex){
+    let middleIndex = Math.floor((startIndex + endIndex)/2);
+    if(arr[middleIndex] === target){
+      return middleIndex;
     }
-    if(target < arr[middle]){
-      end = middle - 1
-    } else{
-      start = middle + 1;
+    else if(target < arr[middleIndex]){
+      endIndex = middleIndex - 1;
+    } 
+    else{
+      startIndex = middleIndex + 1;
     }
   }
-  return - 1;
+  return -1;
 }
 console.log(binarySearch([-5,2,4,6,10], 6));
 console.log(binarySearch([-5,2,4,6,10], 10));
