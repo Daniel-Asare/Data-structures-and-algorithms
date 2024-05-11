@@ -1,3 +1,1 @@
-if(x % 2 === 0){
-    //   return true;
-    // }
+const arr = [-6, 20, 8, -2, 4];
