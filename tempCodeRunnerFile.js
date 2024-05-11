@@ -1,1 +1,1 @@
-const arr = [-6, 20, 8, -2, 4];
+undefined
