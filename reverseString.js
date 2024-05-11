@@ -1,11 +1,10 @@
 function reverseStr(str){
-  console.log(str.length);
-  let reverse = '';
-  for( let i = str.length - 1  ; i >= 0; i-- ){
-    console.log(str[i], i);
-    reverse += str[i];
-  }
-  return reverse;
+ let reverse = ''
+ lo
+ for(let i = str.length - 1; i >= 0; i--){
+  reverse += str[i]
+ }
+ return reverse;
 }
 
 console.log(reverseStr('Hello'));
@@ -21,6 +20,6 @@ function reverseArr(arr){
     rightIndex--;
   }
   return arr
-}
+} 
 
 console.log(reverseArr(['H','e','l','l','o']));
