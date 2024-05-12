@@ -7,7 +7,6 @@ class Stack{
     this.items[this.count] = element;
     this.count++;
     console.log(`${element} added to ${this.count}`);
-    return this.count - 1
   }
 
   pop(){

@@ -1,10 +1,11 @@
+// Reverse a String: Write a function that reverses a given string. For example, if the input is "hello", the output should be "olleh".
+
 function reverseStr(str){
- let reverse = ''
- lo
+ let reserve = '';
  for(let i = str.length - 1; i >= 0; i--){
-  reverse += str[i]
+  reserve += str[i];
  }
- return reverse;
+ return reserve;
 }
 
 console.log(reverseStr('Hello'));
